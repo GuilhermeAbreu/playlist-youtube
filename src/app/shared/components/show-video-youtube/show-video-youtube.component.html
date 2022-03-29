@@ -1,0 +1,10 @@
+<ion-card>
+  <iframe *ngIf="videoSelect?.url" width="100%" height="215" [src]="video() | safe" title="YouTube video player"
+    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen></iframe>
+
+  <ion-card-content *ngIf="!videoSelect" class="ion-text-center">
+    Selecione um video para executar!
+  </ion-card-content>
+  
+</ion-card>

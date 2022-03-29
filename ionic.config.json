@@ -1,0 +1,8 @@
+{
+  "name": "playlist-youtube",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular"
+}

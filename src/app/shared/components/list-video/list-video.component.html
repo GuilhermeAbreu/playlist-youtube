@@ -1,0 +1,15 @@
+<ion-grid>
+    <ion-col *ngFor="let video of videos; let i = index">
+      <ion-card (click)="initVideo(video)">
+        <ion-card-content>
+          <strong>{{i}}</strong>
+          - {{video.title}}
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+</ion-grid>
+<ion-card *ngIf="videos.length === 0">
+  <ion-card-content class="ion-text-center">
+    Adicione um video a lista.
+  </ion-card-content>
+</ion-card>

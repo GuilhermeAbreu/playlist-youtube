@@ -1,0 +1,21 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Playist Youtube - maybe without ads
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-grid>
+      <ion-col>
+        <app-show-video-youtube [videoSelect]="this.videoSelect"></app-show-video-youtube>
+      </ion-col>
+      <ion-col>
+        <app-list-video (eventVideoSelect)="viewVideo($event)" [videos]="videos"></app-list-video>
+      </ion-col>
+  </ion-grid>
+  <ion-fab slot="fixed" class="ion-justify-content-center">
+    <ion-fab-button (click)="addModal()">ADD</ion-fab-button>
+  </ion-fab>
+</ion-content>
